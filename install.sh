@@ -5,8 +5,6 @@ fi
 
 curl -L https://downloader.cursor.sh/linux/appImage/x64 -o cursor.appimage
 
-curl https://lobehub.com/e8ce31d9-52ed-444a-9d4c-31771500e1e4 -o cursor.png
-
 chmod +x ./cursor.appimage
 
 mkdir /opt/cursor
@@ -22,12 +20,13 @@ Type=Application
 Categories=Development;
 EOF
 
-if [ -f ~/.bashrc ]; then
+
+if [ -f ~/.bashrc ]
+then
     echo "alias cursor='/opt/cursor/cursor.appimage --no-sandbox'" >> ~/.bashrc
 fi
 
-if [ -f ~/.zshrc ]; then
+if [ -f ~/.zshrc ]
+then
     echo "alias cursor='/opt/cursor/cursor.appimage --no-sandbox'" >> ~/.zshrc
 fi
-
-# sudo rm /opt/cursor/cursor.appimage && sudo rm /opt/cursor/cursor.png && sudo rmdir /opt/cursor && sudo rm /usr/share/applications/cursor.desktop
