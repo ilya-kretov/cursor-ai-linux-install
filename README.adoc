@@ -1,0 +1,37 @@
+= Cursor AI Linux Installation Guide
+:toc:
+:toc-title: Table of Contents
+:sectanchors:
+:source-highlighter: highlight.js
+
+== Overview
+
+This guide provides instructions for installing Cursor AI on Linux systems.
+
+== Prerequisites
+
+* Linux operating system
+
+== Installation
+
+. Download the latest release
+. Extract the archive
+. Run the installation script
+
+[source,bash]
+----
+chmod +x ./install.sh
+./install.sh
+----
+
+== Troubleshooting
+
+For common issues and solutions, please refer to our wiki or open an issue on GitHub.
+
+== Contributing
+
+Contributions are welcome! Please read our contributing guidelines before submitting pull requests.
+
+== License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
